@@ -1,0 +1,80 @@
+\subsection{Panel discussion: “Wind lidars in 5 years”}
+
+We started with presentations from all panelists with their view of where wind lidars will be in 5 years. 68 people joined us for this session.
+
+\subsubsection{Presentations}
+Alex Woodward:
+\begin{itemize}
+    \item What if lidar manufacturers developed a really cheap lidar sensor? What would the community do with such a sensor? 
+    \item What if there were lidars that can be customized, e.g., with apps that community experts would develop? What would you do with a smart lidar?
+\end{itemize}
+Reesa Dexter
+\begin{itemize}
+    \item Power performance with nacelle mounted lidar will be common
+    \item Preference to used lidar over tall masts in simple terrain. R\&D on lidar in complex terrain will continue
+    \item Better FLS uncertainties
+    \item “wind tunnel” equivalent calibration of lidar instead of mast verifications
+    \item Ability to measure across the rotor for the tallest of turbines    
+\end{itemize}
+Rozenn Wagner
+\begin{itemize}
+    \item Nacelle lidar will be the standard for power curve testing
+    \item Lidars will be standard for resource and site assessment. The main challenge to be solved are turbulence intensity (TI) measurements
+\end{itemize}
+Alexandra St. Pé
+\begin{itemize}
+    \item Wind resource assessment
+    \begin{itemize}
+        \item How does varying TI input impact wake models?
+        \item What's the impact of lidar speed and TI on $P\textrm{50}$ estimates?
+    \end{itemize}
+    \item Site suitability 
+    \begin{itemize}
+        \item How does TI impact load models?
+        \item How does different load model output impact site suitability decisions?
+    \end{itemize}
+    \item Power performance tests
+    \begin{itemize}
+        \item How can power performance be more accurately and precisely be predicted using a lidar?
+    \end{itemize}
+    \item Performance monitoring
+    \begin{itemize}
+        \item How can we develop more integrated and intelligent wind farms?
+        \item How can lidars be used to optimize turbine performance?
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Discussion}
+\emph{Many of the following questions and chat were taken verbatim from the video chat window. There have been some edits for spelling and clarity.}
+
+Alex: ZX lidar carry out factory acceptance tests and for certain customers an met mast validation is carried out. For ZX the factory tests are much more important, and the field validation is an add-on. What would be needed to remove the need for a mast validation?
+\begin{itemize}
+    \item Rozenn: part of the answer is in the uncertainty estimation since the goal is to reduce the risk. And that is what is usually looked for in a validation. 
+    \item Reesa: there needs to be an industry standard. It would be nice for the lidar manufacturer to have a standard way of coming up with an uncertainty quantification. We need industry acceptance. 
+    \item Alexandra: the question is, why are we comparing to a cup? Cup-free validation would be ideal.
+\end{itemize}
+
+A researcher: a question to Reesa and Rozenn: How urgently does the industry really need TI measurements? How much do you think industry would be willing to pay for it as an extra?
+\begin{itemize}
+    \item Reesa: there’s been different stakeholders; OEMs, developers, and academia. There was a lot of great but technical work from academia. Industry needs more practical solutions. Masts cannot keep up with the high hub heights, so there is an economic incentive to resolve this. It is a bottleneck to move away from the cup and towards only lidar. It is an important part of moving the technology forward. 
+    \item Alexandra: There has been a lot of work done. There is a gap in benchmarking all the methods. How do I know which method to use for a specific site and a specific lidar? I need something that is practical and does not cost much time. There is a Consortium for the Advancement of Remote Sensing (CFARS) \enquote{site suitability} subgroup that works with a lot of stakeholders and works on how to get lidar TI accepted for site suitability. We need to go from TI measurements also to loads models. We are coming to an end of the line. 
+    \item Alex: the progress that CFARS and other groups are making is brilliant. The challenge as a lidar manufacturer is that we don't own the data; it's owned by the turbine OEM. The different groups are pushing now independently and CFARS can bring the acceptance over the tipping point. 
+\end{itemize}
+
+An industry engineer: how would a lidar sensor compare to a 3D ultrasonic anemometer? For example, if we were to estimate turbulent kinetic energy (TKE)?
+\begin{itemize}
+    \item Reesa: the primary driver is the volume that is being measured in. Lidars measure over a big volume compared to a sonic. Comparing sonics to lidar measurements, the sonics are more similar than cups. Cups have also issues, e.g. with overspeeding. 
+\end{itemize}
+
+A consultant: a question to Reesa/Rozenn: We already have quite some evidence for ground-based lidar (GBL) vs met mast TI measurements and the level of overestimation of GBL. Do you have some preliminary estimates on TI measurements from nacelle-mounted lidar? Do we expect it to be conservative compared to the GBL case, considering today's technology?
+\begin{itemize}
+    \item Rozenn: DTU have done a lot of analysis of this. Nacelle-mounted lidar would be less conservative than GBL. It is not the same bias because it is measured into the wind and is aligned to the yawing of the turbine. There is no simple correction to correct the TI, we still need to find a proper way to do that.
+\end{itemize}
+
+A lidar supplier: a question to Rozenn: you mentioned we need to measure wind profiles for PPT for large wind turbines. Could you elaborate? Would it be used to normalize the power curve, or determine if the shear value is within the range of the warranty power curve?
+\begin{itemize}
+    \item Rozenn: for me the ideal method would be to fulfill the requirements for rotor equivalent measurements. That means measuring at least at three heights, and at 2.5 diameters (2.5$D$) upstream. 
+    \item Q: can you give details on the near measurements that you talked about?
+    \item Rozenn: I am being conservative. I doubt we have overcome the 2.5$D$ challenge, so I think we need to measure the profile at that distance for 5 years.
+\end{itemize}
+

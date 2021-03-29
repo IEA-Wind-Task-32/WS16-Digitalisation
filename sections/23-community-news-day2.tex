@@ -1,0 +1,94 @@
+\subsection{Community news}
+
+\begin{table}[!h]
+  \centering
+  % set up banded rows for the agenda and add lines to the columns
+  \arrayrulecolor{Task32Blue2!15}
+  \rowcolors{2}{Task32Blue2!5}{white}
+  \begin{tabular}{@{}|p{0.125\columnwidth}|p{0.85\columnwidth}|@{}}
+  \rowcolor{Task32Blue2} \textbf{Time} & \textbf{Activity} \\  
+  16:00 & Community news:
+    \begin{itemize}
+      \item The \enquote{wind lidar in cold climate} working group (Nicolas Jolin, Nergica)
+      \item The \enquote{wind lidar in complex terrain} working group (Alexander Stökl, Energiewerkstatt)
+      \item A possible new round-robin on forward-looking lidar TI (Jens Riechert, DNV-GL)
+    \end{itemize}\\
+  16:45 & Close \\
+  \end{tabular}
+  \label{tab:day2-community-news-agenda}
+\end{table}
+
+50 people joined us for an update on our ongoing activities.
+
+\subsubsection[Update from the \enquote{wind lidar in cold climate} working group]{Update from the \enquote{wind lidar in cold climate} working group (Nicolas Jolin, Nergica)}
+
+\emph{Nicolas presented an update on the \enquote{wind lidar in cold climate} working group. The presentation will be made available online.}
+
+An industry researcher: how do you estimate the liquid water content from the CNR and how sure are you on your temperature profile? This would be very interesting.
+
+\begin{itemize}
+\item Nicolas: we do not have a clear method yet. We need to find the   correlation of the data with icing. One solution could also involve machine learning. We do not have a clear measure to extrapolate temperature profiles.
+\end{itemize}
+
+Andy: What would a good data set look like?
+
+\begin{itemize}
+\item Nicolas: The type of lidar does not matter. 1-2 months of 10-minute lidar data, temperature, and altitude information.
+\end{itemize}
+
+An industry researcher: what can we get out of CNR or the spectra that would help us with the question of liquid water?
+
+\begin{itemize}
+\item Paul Mazoyer: we did not work on that ourselves but with an institute   that worked on detecting icing. There are things possible, but we have not commercialised them.
+\item Chris Slinger: the raw spectra is recorded and by eye you can tell if it is raining. There should be methods using this. At DTU Ana Maria Tilk is working on blade erosion.
+\item Hans Jorgenson (DTU): Mikkel Seijhorn is working on this topic as well.
+\end{itemize}
+
+\subsubsection[Update from the \enquote{wind lidar in complex terrain} working group]{Update from the \enquote{wind lidar in complex terrain} working group (Alexander Stökl, Energiewerkstatt)}
+\label{sec:news-complex-terrain-group}
+
+An industry researcher: regarding the question of how to quantify terrain complexity: Have you considered the methodology described in Section 11.2 in IEC 61400-1:2019? (this describes a method for \enquote{Assessment of the topographical complexity})
+
+\begin{itemize}
+\item Alexander: yes they are a starting point, they give you a lower safe limit, but they do not tell you how far to go.
+\end{itemize}
+
+An industry wind lidar user: What is the reason for correcting the data for 'the effect of complexity'?
+
+\begin{itemize}
+\item Alexander: There are several methods used for lidar data correction on   a regular basis. One point is to have a look at the suitability of the  methods and how they compare to each other on these kinds of sites. It would have been nicer to have a broader range of sites to compare. We compare met mast data with lidar data. What we want to know is how good we get when applying the correction to the lidar data. 
+\item Andy: wind lidar in complex terrain sometimes gives different estimates of wind speed and direction than a met mast. This is a result of the windfield reconstruction not capturing the true properties of the wind field (e.g. by incorrectly assuming flow homogeneity)
+\item The user: alright, so the goal is to establish transfer functions between met mast and lidar.
+\end{itemize}
+
+An academic researcher: Where do the highest uncertainties come from when assessing lidar data in complex terrain?
+
+\begin{itemize}
+\item Alexander: you do not have a steady and homogeneous flow. When you decompose the signal from the different beams, you make an error because usually you use the assumption of homogeneity. If you use a flow model you can correct for it using a correction model.
+\item The academic researcher: the wind field reconstruction is giving you the highest uncertainty.
+\item Alexander: it is a complex problem!
+\end{itemize}
+
+\subsubsection[A possible round robin on turbulence estimates from nacelle-mounted lidar]{A possible new round-robin on turbulence intensity estimations from nacelle mounted lidar systems (Jens Riechert, DNV-GL)}
+
+Jens presented details of a proposed round-robin.
+
+The General Meeting participants were polled to ask if they would be interested in participating in the round robin:
+
+\begin{itemize}
+\item Yes, actively: 5
+\item Yes, as an observer: 14
+\item No: 9
+\end{itemize}
+
+A problem with the Zoom polling tool prevented some people from indicating that they would actively participate in the round robin. It is estimated that at least 5 votes for \enquote{yes, actively} were not cast, giving a total of 10 votes for \enquote{yes, actively}.
+
+Q: What datasets are you looking for?
+
+\begin{itemize}
+\item Jens: the idea is to have both a pulsed and also a CW lidar exists. We would like a data set with simultaneous measurements with the same conditions.
+\end{itemize}
+
+\begin{taskactions}
+\textbf{Task 32 action}: Task 32 will support this round robin and will work with Jens to hold a meeting later in 2020.
+\end{taskactions}
