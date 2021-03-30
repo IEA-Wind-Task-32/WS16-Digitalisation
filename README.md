@@ -1,11 +1,17 @@
-Last release: 26 November 2019 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4292208.svg)](https://doi.org/10.5281/zenodo.4292208)
+Last release: 29 March 2021 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4646945.svg)](https://doi.org/10.5281/zenodo.4646945)
 
-![CI](https://github.com/IEA-Wind-Task-32/2020-general-meeting-minutes/workflows/CI/badge.svg)
+![CI](https://github.com/IEA-Wind-Task-32/WS16-Digitalisation/workflows/CI/badge.svg)
 
-![](./4292208-2by1.png)
+![](./4646945-2by1.png)
 
-# IEA Wind Task 32 2020 General Meeting
-The 2020 General Meeting took place online because of the COVID-19 pandemic.  COVID-19 made networking and collaboration harder for everyone during 2020, and so the 2020 General Meeting was designed to let the wind lidar community mingle virtually with their colleagues through a mix of discussion, working groups, and networking sessions.
+# IEA Wind Task 32 Workshop 16: Digitalisation of wind lidar
+This workshop took place online on 17 March 2021.
+
+**What will digitalisation mean for wind lidar, and how can digitalised wind lidar be integrated with the digitalised wind energy business?**
+
+Wind energy and many other users of wind lidar are going digital, leveraging decades of developments in programming, more reliable communications, and the internet of things. This digital transformation will lead to new ways of working, new opportunities, and new business ideas. But it will also mean that wind lidar will change as well. Together, the wind energy industry and wind lidar will undergo digitalisation.
+
+This workshop used a combination of presentations, group work, and discussions to explore what digitalisation might mean for wind lidar hardware, software, users, and stakeholders.
 
 The minutes of the meeting can be found in [main.pdf](main.pdf).
 
@@ -15,16 +21,16 @@ To find out more about Task 32 activities, see the Task 32 website at https://co
 ## Citing versions
 We suggest using the digital object identifier or 'DOI' to refer to specific versions of the roadmap.
 
-Click on https://doi.org/10.5281/zenodo.4292208 to see the most recent version. On this page you can also find a version history, and then go to the page for the version you want to cite. This approach allows you to find the DOI for a version, e.g. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4292208.svg)](https://doi.org/10.5281/zenodo.4292208) for the 2020 November 26 version.
+Click on https://doi.org/10.5281/zenodo.4646944 to see the most recent version. On this page you can also find a version history, and then go to the page for the version you want to cite. This approach allows you to find the DOI for a version, e.g. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4646945.svg)](https://doi.org/10.5281/zenodo.4646945) for the 2021 March 29 version.
 
 ## Update history
-- 2020 November 26: First written version. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4292208.svg)](https://doi.org/10.5281/zenodo.4292208)
+- 2021 March 29: First written version. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4646945.svg)](https://doi.org/10.5281/zenodo.4646945)
 
 # How to provide feedback to this document
 We welcome constructive feedback on this document. There are two ways to provide feedback to this document.
 
 ## ... through Github
-You can provide feedback to the roadmap by [raising an issue](https://github.com/IEA-Wind-Task-32/2020-general-meeting-minutes/issues). Before you raise an issue, please take a few minutes to check if there is a similar one in the list already.
+You can provide feedback to the roadmap by [raising an issue](https://github.com/IEA-Wind-Task-32/WS16-Digitalisation/issues). Before you raise an issue, please take a few minutes to check if there is a similar one in the list already.
 
 **You will have to be logged in to Github to provide feedback**. This means that your feedback will be associated with your username, which may make it possible to identify you. We prefer to have feedback associated with a name because the roadmap is a community document.
 
