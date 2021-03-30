@@ -12,7 +12,7 @@
 \title{WS16: Digitalisation of Wind Lidar}
 \shorttitle{WS16: Digitalisation}
 \doctype{IEA Wind Task 32 Workshop Minutes}
-\DOI{10.5281/zenodo.xxxxxx}
+\DOI{10.5281/zenodo.4646945}
 \addbibresource{bibliography.bib}
 
 %% -----------------------------------
@@ -23,7 +23,7 @@
 \newtcolorbox{taskactions}[1][]
 {
 	every float=\centering,
-	width=1.0\columnwidth,
+	width=1.0\linewidth,
 	boxsep=0pt,
 	left=3pt,
 	right=3pt,
@@ -31,7 +31,18 @@
 	colframe = Task32Blue2,
 	#1,
 }
-% no indents
+\newenvironment{altquote}
+	{\par\itshape\textquotedblleft\ignorespaces}%
+	{\unskip\unskip\textquotedblright\par}% no indents
+\newcommand{\altattrib}[1]{%
+	\par                   % ensure vertical mode
+	\nopagebreak           % we want no page break
+	\vspace{0pt}% some vertical space
+	\hspace*{\fill}%       % fill the line
+	\textit{--#1}%           % the date
+	\par                   % end the new paragraph
+  	}%	
+	
 \setlength{\parindent}{0pt}
 % long tables
 \usepackage{supertabular}
@@ -64,9 +75,9 @@
 %% Authors
 %% -----------------------------------
 \noindent\begin{minipage}{\columnwidth}
-\textcolor{TextLightGrey}{Authors: Andrew Clifton~\orcid{0000-0001-9698-5083}~\mailme{clifton@ifb.uni-stuttgart.de}, %
-Ines Würth~\orcid{},
-David Schlipf~\orcid{}}
+\textcolor{TextLightGrey}{Author: Andrew Clifton~\orcid{0000-0001-9698-5083}~\mailme{clifton@ifb.uni-stuttgart.de}}
+%, %
+%David Schlipf~\orcid{}}
 \end{minipage}
 \vskip 6pt
 
@@ -84,47 +95,18 @@ This workshop used a combination of presentations, group work, and discussions t
 
 \tableofcontents
 
-\section*{Disclaimer}
-The presence of a person’s name or an organisation's name in this document (e.g., in the list of participants in Table \ref{tab:participants}) should not be taken to imply that that person or organisation agrees with any of the opinions set out here. Similarly, the use of any brand names or trade marks does not constitute an endorsement.
+\newpage
 
-\section*{Attribution}
-The workshop ran under modified Chatham House rules. Specifically, participants are free to use information from the discussion, but are not allowed to reveal who made any comment. Material presented by the three invited speakers (listed in “Digitalisation in Practice”) may be attributed.
-
-\section{Agenda}
-
-\begin{table}[!h]
- \centering
- % set up banded rows for the agenda and add lines to the columns
- \arrayrulecolor{Task32Blue2!15}
- \rowcolors{2}{Task32Blue2!5}{white}
- \begin{tabular}{@{}|p{0.125\columnwidth}|p{0.85\columnwidth}|@{}}
- \rowcolor{Task32Blue2} \textbf{Time} & \textbf{Activity} \\
- 14:00 & Introduction \\
- 14:20 & What is digitalisation?
-  \begin{itemize}
-        \item How the common lidar data format improved our data processing (Ines Würth, SWE)
-        \item The Smart Lidar Concept - New Opportunities for the Lidar Community (David Schlipf)
-	\item Modularising wind lidar (Andy Clifton)
-    \end{itemize} \\
- 15:00 & Working groups: user stories for different wind lidar scenarios\\
- 16:00 & Sharing results\\
- 16:45 & Close \\
- \end{tabular}
- \label{tab:agenda}
-\end{table}
-
-
-\input{sections/00_introduction}
-\input{sections/01_inPractice}
-
-\input{sections/02_userStories}
-\input{sections/02_01_wra}
-\input{sections/02_02_offshoreForecasting}
-\input{sections/02_03_windPlantControl}
-\input{sections/02_04_lidarSolutionsProvider}
-
-\input{sections/03_summary}
-\input{sections/04_conclusions}
+\input{sections/01_details}
+\input{sections/02_introduction}
+\input{sections/03_inPractice}
+\input{sections/04_userStories}
+\input{sections/04_01_wra}
+\input{sections/04_02_offshoreForecasting}
+\input{sections/04_03_windPlantControl}
+\input{sections/04_04_lidarSolutionsProvider}
+\input{sections/05_summary}
+\input{sections/06_conclusions}
 
 %% -----------------------------------
 %% References
@@ -137,6 +119,7 @@ The workshop ran under modified Chatham House rules. Specifically, participants 
 	\printbibliography
 }
 \vspace*{\fill}
+\newpage
 
 %% -----------------------------------
 %% Outlined block of smaller text
@@ -160,49 +143,48 @@ The workshop ran under modified Chatham House rules. Specifically, participants 
 		
 		\begin{tabular}{m{0.3\columnwidth}m{0.6\columnwidth}}
 			\rowcolor{white}
-			\multicolumn{2}{p{0.9\columnwidth}}{%
-			This document was self published by IEA Wind Task 32.
-			}\\
+				\multicolumn{2}{p{0.9\columnwidth}}{%
+					This document was self published by IEA Wind Task 32.
+				}\\
 			% IEA Wind * DO NOT EDIT THIS TEXT *
 			\rowcolor{white}
-			\includegraphics[height=2cm]{graphics/IEAWind_logo.jpg}  &
-			The International Energy Agency is an autonomous organisation which works to ensure reliable, affordable and clean energy for its 30 member countries and beyond. The IEA Wind Technology Collaboration Programme supports the work of 38 independent, international groups of experts that enable governments and industries from around the world to lead programmes and projects on a wide range of energy technologies and related issues.%
-			\\
+				\includegraphics[height=2cm]{graphics/IEAWind_logo.jpg}  &
+				The International Energy Agency is an autonomous organisation which works to ensure reliable, affordable and clean energy for its 30 member countries and beyond. The IEA Wind Technology Collaboration Programme supports the work of 38 independent, international groups of experts that enable governments and industries from around the world to lead programmes and projects on a wide range of energy technologies and related issues.%
+				\\
 			% Task 32 * DO NOT EDIT THIS TEXT *
 			\rowcolor{white}
-			\includegraphics[height=1.5cm]{graphics/Task32_logo.jpg} &
-			\href{https://community.ieawind.org/task32/home}{IEA Wind Task 32} exists to identify and mitigate the barriers to the deployment of wind lidar for wind energy applications.\\
+				\includegraphics[height=1.5cm]{graphics/Task32_logo.jpg} &
+				\href{https://community.ieawind.org/task32/home}{IEA Wind Task 32} exists to identify and mitigate the barriers to the deployment of wind lidar for wind energy applications.\\
 			% authors, etc
 			\rowcolor{white}
-			\multicolumn{2}{p{0.9\columnwidth+2\tabcolsep}}{%
-		%% -----------------------------------
-		%% For more information
-		%% -----------------------------------
-		% N.B. do not add line breaks between the next items
-		\textbf{For more information:} See the  \href{https://community.ieawind.org/task32/home}{Task 32 website}.
-		%% -----------------------------------
-		%% Authors
-		%% -----------------------------------
-		\textbf{Author team:} %
-		Andrew Clifton (Task 32 Operating Agent, University of Stuttgart, Germany), %
-		Ines Würth (SWE, University of Stuttgart, Germany), %		
-		David Schlipf (Task 32 operating Agent, Flensburg University of Applied Sciences, Germany).
-		%% -----------------------------------
-		%% Reviewers
-		%% -----------------------------------
-		%\textbf{Reviewers:} %
-		% first last (short affiliation), %
-		% first last (short affiliation).
-		%% -----------------------------------
-		%% Images
-		%% -----------------------------------
-		\textbf{Images:}
-		Banner, left to right: \href{https://unsplash.com/@alexkixa}{Alexandre Debiève on Unsplash}, \href{http://ifb.uni-stuttgart.de}{SWE U. Stuttgart}, \href{https://unsplash.com/@markusspiske}{Markus Spiske on Unsplash}.
-	}\\
-	\end{tabular}%
-
-	}
-
+				\multicolumn{2}{p{0.9\columnwidth+2\tabcolsep}}{%
+					%% -----------------------------------
+					%% For more information
+					%% -----------------------------------
+					% N.B. do not add line breaks between the next items
+					\textbf{For more information:} See the \href{https://community.ieawind.org/task32/home}{Task 32 website}.
+					%% -----------------------------------
+					%% Authors
+					%% -----------------------------------
+					\textbf{Author team:} %
+					Andrew Clifton (Task 32 Operating Agent, University of Stuttgart, Germany), %
+					David Schlipf (Task 32 operating Agent, Flensburg University of Applied Sciences, Germany).
+					%% -----------------------------------
+					%% Reviewers
+					%% -----------------------------------
+					\textbf{Reviewers:} %
+					A draft of this document was made available to all attendees to review. It was also reviewed by 
+					Ines Würth (SWE, University of Stuttgart, Germany) and 
+					David Schlipf (Flensburg University of Applied Sciences).
+ 					% first last (short affiliation)
+					%% -----------------------------------
+					%% Images
+					%% -----------------------------------
+					\textbf{Images:} %
+					Banner, left to right: \href{https://unsplash.com/@alexkixa}{Alexandre Debiève on Unsplash}, \href{http://ifb.uni-stuttgart.de}{SWE U. Stuttgart}, \href{https://unsplash.com/@markusspiske}{Markus Spiske on Unsplash}.%
+					} \\
+		\end{tabular}%
+	} % end of footnote size
 	%% -----------------------------------
 	%% End of highlighted block
 	%% -----------------------------------
@@ -210,14 +192,25 @@ The workshop ran under modified Chatham House rules. Specifically, participants 
 \vspace*{\fill}
 
 \clearpage
-\input{sections/02_01_wra_figures}
-\clearpage
-\input{sections/02_02_offshoreForecasting_figures}
-\clearpage
-\input{sections/02_03_windPlantControl_figures}
-\clearpage
-\input{sections/02_04_lidarSolutionsProvider_figures}
-\clearpage
-\input{sections/05_participants}
+\onecolumn
+\section*{User stories for the different scenarios}
+The following tables and graphics describe the user stories for different actors in the different scenarios. They were created during the workshop and are included here with minimal editing.
 
+The scenarios include:
+\begin{itemize}
+	\item wind resource assessment using wind lidar
+	\item energy forecasting for offshore wind parks using wind lidar
+	\item wind park control using wind lidar
+	\item lidar solutions providers.
+\end{itemize}
+
+\input{sections/04_01_wra_figures}
+\clearpage
+\input{sections/04_02_offshoreForecasting_figures}
+\clearpage
+\input{sections/04_03_windPlantControl_figures}
+\clearpage
+\input{sections/04_04_lidarSolutionsProvider_figures}
+\clearpage
+\input{sections/07_participants}
 \end{document}
